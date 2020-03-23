@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="./analyzer.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="backDiv"
+        style="position:fixed;width:100%;height:100%;top:0px;bottom:0px;left:0px;right:0px;display:none;background-color:rgba(0,0,0,0.6);z-index:999994">
+    </div>
+    <div id="container">
+        <div id="hand">
+            Current hand: 
+        </div>
+        <div id="advice">
+            Advice: 
+        </div>
+        <br />
+        <div id="resetbutton" onclick="reset()">
+            <div type="div">Reset</div>
+        </div>
+        <div id="cards">
+            <div id="clubs">
+                <div id="2C" onclick="analyzeHand('2C')">♣2</div>
+                <div id="3C" onclick="analyzeHand('3C')">♣3</div>
+                <div id="4C" onclick="analyzeHand('4C')">♣4</div>
+                <div id="5C" onclick="analyzeHand('5C')">♣5</div>
+                <div id="6C" onclick="analyzeHand('6C')">♣6</div>
+                <div id="7C" onclick="analyzeHand('7C')">♣7</div>
+                <div id="8C" onclick="analyzeHand('8C')">♣8</div>
+                <div id="9C" onclick="analyzeHand('9C')">♣9</div>
+                <div id="10C" onclick="analyzeHand('10C')">♣10</div>
+                <div id="JC" onclick="analyzeHand('JC')">♣J</div>
+                <div id="QC" onclick="analyzeHand('QC')">♣Q</div>
+                <div id="KC" onclick="analyzeHand('KC')">♣K</div>
+                <div id="AC" onclick="analyzeHand('AC')">♣A</div>
+            </div>
+            <div id="spades">
+                <div id="2S" onclick="analyzeHand('2S')">♠2</div>
+                <div id="3S" onclick="analyzeHand('3S')">♠3</div>
+                <div id="4S" onclick="analyzeHand('4S')">♠4</div>
+                <div id="5S" onclick="analyzeHand('5S')">♠5</div>
+                <div id="6S" onclick="analyzeHand('6S')">♠6</div>
+                <div id="7S" onclick="analyzeHand('7S')">♠7</div>
+                <div id="8S" onclick="analyzeHand('8S')">♠8</div>
+                <div id="9S" onclick="analyzeHand('9S')">♠9</div>
+                <div id="10S" onclick="analyzeHand('10S')">♠10</div>
+                <div id="JS" onclick="analyzeHand('JS')">♠J</div>
+                <div id="QS" onclick="analyzeHand('QS')">♠Q</div>
+                <div id="KS" onclick="analyzeHand('KS')">♠K</div>
+                <div id="AS" onclick="analyzeHand('AS')">♠A</div>
+            </div>
+            <div id="hearts">
+                <div id="2H" onclick="analyzeHand('2H')">♥2</div>
+                <div id="3H" onclick="analyzeHand('3H')">♥3</div>
+                <div id="4H" onclick="analyzeHand('4H')">♥4</div>
+                <div id="5H" onclick="analyzeHand('5H')">♥5</div>
+                <div id="6H" onclick="analyzeHand('6H')">♥6</div>
+                <div id="7H" onclick="analyzeHand('7H')">♥7</div>
+                <div id="8H" onclick="analyzeHand('8H')">♥8</div>
+                <div id="9H" onclick="analyzeHand('9H')">♥9</div>
+                <div id="10H" onclick="analyzeHand('10H')">♥10</div>
+                <div id="JH" onclick="analyzeHand('JH')">♥J</div>
+                <div id="QH" onclick="analyzeHand('QH')">♥Q</div>
+                <div id="KH" onclick="analyzeHand('KH')">♥K</div>
+                <div id="AH" onclick="analyzeHand('AH')">♥A</div>
+            </div>
+            <div id="diamonds">
+                <div id="2D" onclick="analyzeHand('2D')">♦2</div>
+                <div id="3D" onclick="analyzeHand('3D')">♦3</div>
+                <div id="4D" onclick="analyzeHand('4D')">♦4</div>
+                <div id="5D" onclick="analyzeHand('5D')">♦5</div>
+                <div id="6D" onclick="analyzeHand('6D')">♦6</div>
+                <div id="7D" onclick="analyzeHand('7D')">♦7</div>
+                <div id="8D" onclick="analyzeHand('8D')">♦8</div>
+                <div id="9D" onclick="analyzeHand('9D')">♦9</div>
+                <div id="10D" onclick="analyzeHand('10D')">♦10</div>
+                <div id="JD" onclick="analyzeHand('JD')">♦J</div>
+                <div id="QD" onclick="analyzeHand('QD')">♦Q</div>
+                <div id="KD" onclick="analyzeHand('KD')">♦K</div>
+                <div id="AD" onclick="analyzeHand('AD')">♦A </div>
+            </div>
+        </div>
+</body>
+
+</html>
